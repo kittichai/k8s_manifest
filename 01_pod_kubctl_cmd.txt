@@ -1,0 +1,16 @@
+#Apply pod #####
+>kubectl apply -f  https://raw.githubusercontent.com/kittichai/k8s_manifest/main/01_pod.yaml
+
+######Get POD #####
+>kubectl get pod 
+
+######Describe POD #####
+kubectl describe pod linux
+
+# #####exec -it #####
+>kubectl exec -it linux -c busybox   -- /bin/sh 
+>kubectl exec -it linux -c alpine  -- /bin/sh
+
+######Delete POD #####
+>kubectl delete pod  linux
+
