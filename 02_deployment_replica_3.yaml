@@ -5,7 +5,7 @@ metadata:
   name: nginx-deployment
   namespace: default
   labels:
-    app: nginx  
+    app: nginx-deployment  
 spec:
   selector:
     matchLabels:
