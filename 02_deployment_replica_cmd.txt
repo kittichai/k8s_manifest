@@ -1,1 +1,29 @@
+#Apply pod #####
+>kubectl apply -f  https://raw.githubusercontent.com/kittichai/k8s_manifest/main/02_deployment_replica_1.yaml
+
+######Get POD #####
+>kubectl get pod | grep  nginx
+
+######Describe POD #####
+>kubectl describe pod | grep  nginx
+
+######Get deployment #####
+kubectl get deployment
+
+######Describe scale #####
+>kubectl scale deploy nginx-deployment --replicas=5
+
+>kubectl scale deploy nginx-deployment --replicas=2
+
+######exec -it #####
+>kubectl exec -it nginx_xxx  -- /bin/sh
+
+
+######log #####
+>kubectl logs nginx_xxx
+
+######Delete POD #####
+>kubectl delete pod  nginx_xxx
+
+
 
