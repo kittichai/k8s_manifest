@@ -1,0 +1,13 @@
+>minikube version
+
+>minikube start --wait=false
+
+>kubectl cluster-info
+
+>kubectl get nodes
+
+>kubectl apply -f /opt/kubernetes-dashboard.yaml
+
+>kubectl get pods -n kubernetes-dashboard -w
+
+>
