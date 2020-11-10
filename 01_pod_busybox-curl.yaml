@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-curl
+  namespace: default
+spec:
+  containers:
+  - name: busybox-curl
+    image: yauritux/busybox-curl:latest
+    command:
+     - sleep
+     - "3600"
