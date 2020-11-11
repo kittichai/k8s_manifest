@@ -1,7 +1,7 @@
 #Apply pod #####
 >kubectl apply -f  https://raw.githubusercontent.com/kittichai/k8s_manifest/main/01_pod.yaml
 
->kubectl apply -f  https://raw.githubusercontent.com/kittichai/k8s_manifest/main/busybox-curl.yaml
+>kubectl apply -f  https://raw.githubusercontent.com/kittichai/k8s_manifest/main/01_pod_busybox-curl.yaml
 
 ######Get POD #####
 >kubectl get pod 
