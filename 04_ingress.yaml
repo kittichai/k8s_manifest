@@ -1,15 +1,15 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ats-mongo-express-ingress
+  name: nginx-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
   namespace: atp
 spec:
   rules:
-  - host: mongo-express-uat.atp.arctic.true.th
+  - host: https://2886795285-80-ollie07.environments.katacoda.com
     http:
       paths:
       - backend:
-          serviceName: ats-mongo-express-svc
+          serviceName: nginx-svc
           servicePort: 80
