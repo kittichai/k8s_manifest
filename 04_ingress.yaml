@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  namespace: atp
+  namespace: default
 spec:
   rules:
   - host: https://2886795285-80-ollie07.environments.katacoda.com
