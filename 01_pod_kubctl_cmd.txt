@@ -12,7 +12,7 @@ kubectl describe pod linux
 # #####exec -it #####
 >kubectl exec -it linux -c busybox   -- /bin/sh 
 >kubectl exec -it linux -c alpine  -- /bin/sh
-
+>kubectl exec -it busybox-curl  -- /bin/sh
 ######Delete POD #####
 >kubectl delete pod  linux
 
