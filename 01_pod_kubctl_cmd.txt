@@ -16,3 +16,4 @@ kubectl describe pod linux
 ######Delete POD #####
 >kubectl delete pod  linux
 
+
